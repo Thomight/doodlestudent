@@ -1,0 +1,6 @@
+FROM bunkerity/bunkerized-nginx
+
+ADD ./dist ./front
+WORKDIR /front
+
+CMD [ "ng", "serve" ]
